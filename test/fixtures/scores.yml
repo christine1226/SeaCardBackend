@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_score: MyString
+  user_id: MyString
+  activity_id: MyString
+
+two:
+  user_score: MyString
+  user_id: MyString
+  activity_id: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_name: MyString
+  parent_email: MyString
+  password_digest: MyString
+  child_username: MyString
+
+two:
+  parent_name: MyString
+  parent_email: MyString
+  password_digest: MyString
+  child_username: MyString
