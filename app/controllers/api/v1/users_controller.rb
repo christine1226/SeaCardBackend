@@ -1,10 +1,9 @@
 class Api::V1::UsersController < ApplicationController
-  def index
-  end
 
   def create
     @user = User.create(user_params)
     if @user.valid?
+      # UserMailer.welcome_email(@user).deliver_now
       token = JWT.encode({user_id: @user.id}, 'SECRET')
       render json: {user: @user, jwt: token}
     else

@@ -11,13 +11,19 @@ class Api::V1::AuthController < ApplicationController
   end
 
   def show
-   string = request.authorization
-   token = JWT.decode(string, 'SECRET')
-   id = token['user_id'].to_i
-   @user = User.find(id)
-   debugger
-   if @user
-     render json: {user_id: @user.id, parent_email: @user.parent_email}
+    id = request.authorization.to_i
+
+    @user = User.find(id)
+    if @user
+      render json: {user_id: @user.id, parent_email: @user.parent_email, child_username: @user.child_username}
+   # string = request.authorization
+   # token = JWT.decode(string, 'SECRET')
+   # byebug
+   # id = token['user_id'].to_i
+   # @user = User.find(id)
+   # debugger
+   # if @user
+   #   render json: {user_id: @user.id, parent_email: @user.parent_email}
    else
      render json: {error: 'error occured'}, status: 422
    end
