@@ -5,6 +5,10 @@ Rails.application.routes.draw do
       resources :users
       get '/current_user', to: "auth#show"
       post '/login', to: "auth#create"
+      get '/progress', to: "users#progress"
+      patch '/update', to: "users#update"
+      resources :activities
+      resources :scores
 
     end
   end

@@ -1,0 +1,18 @@
+development:
+  cloud_name: dbos8u0cz
+  api_key: '969561464793133'
+  api_secret: pHyOFxukwar-c5ld-JiMOEaA1xw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dbos8u0cz
+  api_key: '969561464793133'
+  api_secret: pHyOFxukwar-c5ld-JiMOEaA1xw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dbos8u0cz
+  api_key: '969561464793133'
+  api_secret: pHyOFxukwar-c5ld-JiMOEaA1xw
+  enhance_image_tag: true
+  static_image_support: false

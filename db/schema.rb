@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 2018_12_12_184544) do
   end
 
   create_table "scores", force: :cascade do |t|
-    t.integer "user_score"
+    t.integer "correct_answer"
+    t.integer "wrong_answer"
     t.integer "activity_id"
+    t.string "activity_name"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -33,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_12_12_184544) do
     t.string "parent_email"
     t.string "password_digest"
     t.string "child_username"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
