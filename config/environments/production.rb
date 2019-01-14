@@ -64,8 +64,8 @@ config.action_mailer.smtp_settings = {
 address:              'smtp.gmail.com',
 port:                 25,
 domain:               'gmail.com',
-user_name:            'myfirstsoloapp@gmail.com',
-password:             'Iamhere22',
+user_name:            'sea.learners.app@gmail.com',
+password:             '',
 authentication:       'plain',
 enable_starttls_auto: true  }
 

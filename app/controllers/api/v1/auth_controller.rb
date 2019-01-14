@@ -7,7 +7,7 @@ class Api::V1::AuthController < ApplicationController
 
     if @user && @user.authenticate(logged_in_params[:password])
       @token = issue_token({user_id: @user.id}, 'SECRET')
-      render json: {user: @user, jwt: @token}
+      render json: {jwt: @token, parent_email: @user.parent_email, child_username: @user.child_username, avatar: @user.avatar}
     else
       render json: {error: ''}, status: 400
     end

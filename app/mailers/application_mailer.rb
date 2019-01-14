@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'myfirstsoloapp@gmail.com'
+  default from: 'sea.learners.app@gmail.com'
   layout 'mailer'
 end
